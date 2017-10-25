@@ -7,10 +7,39 @@
 
 body{
   font-family:"Droid Sans", sans-serif;
+  color:#423632;
 }
+h1{
+  font-family:"Droid Serif", serif;
+}
+
 a{
   -webkit-transition:all .3s ease;
   transition:all .3s ease;
+}
+.btn-main{
+  color:#423632;
+  background-color:#aae1fa;
+  border-radius:4px;
+  padding:3px 20px;
+  display:inline-block;
+  border:none;
+}
+.btn-main:hover,
+.btn-main:focus{
+  color:#fff;
+  background-color:#423632;
+  text-decoration:none;
+}
+.btn-pair{
+  margin-top:25px;
+}
+.btn-pair>.btn-main{
+  margin-top:10px;
+  display:block;
+  width:155px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .masthead{
@@ -105,6 +134,70 @@ a{
   background-position:-239px 0px;
 }
 
+#hp-growLocations{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+#hp-growLocations article{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 #hp-sustainability{
   position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+  min-height:820px;
+}
+#hp-sustainability .caption{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding-top:25px;
+  padding-bottom:60px;
+  text-align:center;
+  background-color:rgba(0,0,0,.6);
+}
+#hp-sustainability .caption>.container{
+  max-width:475px;
+}
+#hp-sustainability .caption h1{
+  color:#aae1fa;
+}
+#hp-sustainability .caption .icon-link{
+  display:block;
+  padding-top:90px;
+  position:relative;
+  margin-top:25px;
+  color:#fff;
+  text-transform:uppercase;
+}
+#hp-sustainability .caption .icon-link:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url(images/sprites.png);
+}
+#hp-sustainability .caption #methods:before{
+  height:66px;
+  width:122px;
+  background-position:0px -77px;
+}
+#hp-sustainability .caption #quality:before{
+  height:73px;
+  width:126px;
+  background-position:-128px -75px;
+}
+#hp-sustainability .caption #temperature:before{
+  height:85px;
+  width:85px;
+  background-position:-261px -75px;
+}
+#hp-sustainability .caption a.btn-main{
+  margin-top:40px;
 }
