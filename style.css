@@ -1,0 +1,110 @@
+/*
+  Theme Name: Parker Farms
+  Theme Author: The Childress Agency
+  Theme Author URI: https://childressagency.com
+  Version: 1.0
+*/
+
+body{
+  font-family:"Droid Sans", sans-serif;
+}
+a{
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+
+.masthead{
+  padding-top:15px;
+  padding-bottom:5px;
+}
+.masthead>.container{
+  position:relative;
+}
+.masthead .social{
+  position:absolute;
+  left:15px;
+  bottom:0;
+}
+.masthead .social>a{
+  color:#231f20;
+}
+.masthead .social>a:hover,
+.masthead .social>a:focus{
+  opacity:.5;
+}
+#header-nav{
+  box-shadow:0px 7px 9px #333;
+  position:relative;
+  z-index:9;
+}
+#navbar{
+  border-top:1px solid #213f20;
+  text-align:center;
+}
+.navbar-nav{
+  float:none;
+  display:inline-block;
+}
+.navbar-nav>li>a{
+  color:#213f20;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+.hp-hero{
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  min-height:680px;
+}
+.hp-hero .caption{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background-color:rgba(0,0,0,.6);
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:80px;
+}
+.hp-hero .caption a{
+  padding-top:80px;
+  margin-top:20px;
+  position:relative;
+  display:block;
+  color:#fff;
+  text-transform:uppercase;
+}
+.hp-hero .caption a:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url(images/sprites.png);
+}
+.hp-hero .caption #our-growers:before{
+  height:64px;
+  width:84px;
+  background-position:0px 0px;
+}
+.hp-hero .caption #our-products:before{
+  height:70px;
+  width:34px;
+  background-position:-95px 0px;
+}
+.hp-hero .caption #transportation:before{
+  height:66px;
+  width:88px;
+  background-position:-139px 0px;
+}
+.hp-hero .caption #food-safety:before{
+  height:70px;
+  width:49px;
+  background-position:-239px 0px;
+}
+
+#hp-sustainability{
+  position:relative;
+}
