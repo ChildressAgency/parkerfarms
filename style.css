@@ -93,22 +93,37 @@ a:focus{
   background-color:#f2f0eb;
 }
 
-.hp-hero{
+.hero{
   background-repeat:no-repeat;
   background-size:cover;
   position:relative;
+  min-height:315px;
+}
+.hero.hp-hero{
   min-height:680px;
 }
-.hp-hero .caption{
+.hero .caption-section{
   position:absolute;
   bottom:0;
   width:100%;
   background-color:rgba(0,0,0,.6);
-  text-align:center;
   padding-top:20px;
+  padding-bottom:20px;
+}
+.hero .caption{
+  color:#fff;
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.hero .caption>h1{
+  margin-top:0;
+  color:#aae1fa;
+}
+.hero.hp-hero .caption-section{
   padding-bottom:80px;
 }
-.hp-hero .caption a{
+.hp-hero .caption-section a{
   padding-top:80px;
   margin-top:20px;
   position:relative;
@@ -116,8 +131,9 @@ a:focus{
   color:#fff;
   text-transform:uppercase;
   font-weight:400;
+  text-align:center;
 }
-.hp-hero .caption a:before{
+.hp-hero .caption-section a:before{
   content:"";
   position:absolute;
   top:0;
@@ -127,22 +143,22 @@ a:focus{
   margin-right:auto;
   background-image:url(images/sprites.png);
 }
-.hp-hero .caption #our-growers:before{
+.hp-hero .caption-section #our-growers:before{
   height:64px;
   width:84px;
   background-position:0px 0px;
 }
-.hp-hero .caption #our-products:before{
+.hp-hero .caption-section #our-products:before{
   height:70px;
   width:34px;
   background-position:-95px 0px;
 }
-.hp-hero .caption #transportation:before{
+.hp-hero .caption-section #transportation:before{
   height:66px;
   width:88px;
   background-position:-139px 0px;
 }
-.hp-hero .caption #food-safety:before{
+.hp-hero .caption-section #food-safety:before{
   height:70px;
   width:49px;
   background-position:-239px 0px;
@@ -304,6 +320,80 @@ footer .social>a>i{
   font-size:12px;
 }
 
+#timeline{
+  padding-top:40px;
+  padding-bottom:100px;
+}
+.timeline-wrapper{
+  height:900px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  position:relative;
+  padding-bottom:600px;
+}
+/*
+.timeline-wrapper .gradient{
+  background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0.23) 47%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(32%, rgba(255,255,255,0)), color-stop(47%, rgba(255,255,255,0.23)), color-stop(96%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0.23) 47%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0.23) 47%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0.23) 47%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0.23) 47%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+  position:fixed;
+  height:100%;
+  width:100%;
+  bottom:0;
+  left:0;
+} */
+hr.timeline-bar{
+  background: rgba(170,225,250,1);
+  background: -moz-linear-gradient(top, rgba(170,225,250,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(170,225,250,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(170,225,250,1) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(170,225,250,1) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(170,225,250,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(170,225,250,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aae1fa', endColorstr='#ffffff', GradientType=0 );
+  height:90%;
+  width:15px;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  border:none;
+  background-color:#aae1fa;
+  border-radius:6px;
+  z-index:-1;
+}
+.timeline-wrapper .fademe{
+  margin-top:60px;
+}
+.fade-zero,
+.fade-one,
+.fade-two{ 
+  opacity:1;
+  -webkit-transition:opacity .3s ease;
+  transition:opacity .3s ease;
+}
+.fade-one{ 
+  opacity:.66; 
+}
+.fade-two{ 
+  opacity:.33; 
+}
+.timeline-content{
+  max-width:390px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.timeline-content h2{
+  color:#119046;
+  font-size:40px;
+}
+
 @media (max-width:767px){
   footer>.container-fluid{
     max-width:300px;
@@ -329,6 +419,9 @@ footer .social>a>i{
   }
   .navbar-toggle .icon-bar{
     background-color:#231f20;
+  }
+  hr.timeline-bar{
+    display:none;
   }
 }
 @media (min-width:768px){
