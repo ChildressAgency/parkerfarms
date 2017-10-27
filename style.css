@@ -371,6 +371,14 @@ hr.timeline-bar{
 .timeline-wrapper .fademe{
   margin-top:60px;
 }
+.timeline-wrapper2 .row{
+  margin-top:60px;
+}
+.timeline-wrapper2 .fade{
+  -webkit-transition:opacity .3s ease;
+  transition:opacity .3s ease;
+  opacity:.3;
+}
 .fade-zero,
 .fade-one,
 .fade-two{ 
@@ -392,6 +400,9 @@ hr.timeline-bar{
 .timeline-content h2{
   color:#119046;
   font-size:40px;
+}
+.timeline-wrapper2 .fade.fadein{
+  opacity:1;
 }
 
 @media (max-width:767px){

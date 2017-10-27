@@ -23,4 +23,20 @@ jQuery(document).ready(function($){
     });
   });
 
+  $(window).on('scroll', function(){
+    $('.fade').each(function(){
+      var bottom_of_row = $(this).position().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height() - 150;
+
+      if(bottom_of_window > bottom_of_row){
+        $(this).addClass('fadein');
+        //$(this).animate({'opacity':'1'}, 3000);
+      }
+      else{
+        $(this).removeClass('fadein');
+        //$(this).animate({'opacity':'.3'}, 3000);
+      }
+    });
+  });
+
 });
