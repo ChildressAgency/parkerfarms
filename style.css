@@ -599,6 +599,28 @@ hr.timeline-bar{
   padding-bottom:80px;
 }
 
+#teamContacts{
+  background-color:#f2f0eb;
+  padding-top:60px; 
+  padding-bottom:60px;
+}
+.team-row{
+  padding-bottom:10px;
+  padding-top:10px;
+  border-bottom:2px solid #231f20;
+}
+.team-row:last-child{
+  border-bottom:none;
+}
+.team-member>h3{
+  color:#119046;
+  margin-bottom:0;
+  font-weight:700;
+}
+.team-member .member-title{
+  text-transform:uppercase;
+}
+
 
 @media (max-width:767px){
   footer>.container-fluid{
