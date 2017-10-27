@@ -502,6 +502,90 @@ hr.timeline-bar{
   font-size:26px;
 }
 
+#products{
+  background-color:#f2f0eb;
+  padding-top:40px;
+  padding-bottom:60px;
+}
+.product-card{
+  max-width:190px;
+  margin-top:25px;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow:3px 3px 20px #999;
+}
+.product-img-overlay{
+  position:relative;
+  overflow:hidden;
+}
+.product-img-overlay>img{
+  width:100%;
+}
+.product-overlay{
+  position:absolute;
+  background-color:rgba(0,0,0,.7);
+  top:100%;
+  -webkit-transition:top .3s ease;
+  transition:top .3s ease;
+  padding:10px;
+  height:100%;
+  width:100%;
+}
+.product-card:hover .product-overlay{
+  top:0;
+}
+.product-overlay>h3{
+  font-size:16px;
+  font-family:"Droid Serif", serif;
+  margin-top:0;
+  color:#f2f0eb;
+}
+.product-overlay h4{
+  margin-top:0;
+  margin-bottom:0;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:700;
+  padding-left:5px;
+  line-height:1em;
+}
+.location1>h4{
+  background-color:#aae1fa;
+}
+.location1>p{
+  color:#aae1fa;
+}
+.location2>h4{
+  background-color:#cfe5ae;
+}
+.location2>p{
+  color:#cfe5ae;
+}
+.location3>h4{
+  background-color:#f2f0eb;
+}
+.location3>p{
+  color:#f2f0eb;
+}
+.product-title{
+  padding:10px;
+}
+.product-title>h2{
+  font-family:"Droid Sans", sans-serif;
+  margin-top:0;
+  margin-bottom:0;
+  font-weight:700;
+  font-size:22px;
+}
+
+#packaging{
+  padding-top:60px;
+  padding-bottom:80px;
+}
+.packaging-content{
+  text-align:right;
+}
+
 
 @media (max-width:767px){
   footer>.container-fluid{
