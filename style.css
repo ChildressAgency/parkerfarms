@@ -594,6 +594,11 @@ hr.timeline-bar{
   margin-top:25px;
 }
 
+#main{
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
 
 @media (max-width:767px){
   footer>.container-fluid{
