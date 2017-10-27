@@ -1,5 +1,6 @@
 <?php get_header(); ?>
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
+    <?php if(!empty(get_the_content())): ?>
     <main id="main">
       <div class="container">
         <article>
@@ -7,6 +8,7 @@
         </article>
       </div>
     </main>
+    <?php endif; ?>
   <?php endwhile; endif; ?>
   <?php if(have_rows('timeline')): ?>
     <section id="timeline">
@@ -14,11 +16,11 @@
       <div class="container">
         <div class="timeline-wrapper2">
           <?php $i=1; while(have_rows('timeline')): the_row(); ?>
-            <div class="row">
+            <div class="row<?php if($i>1){ echo ' fade'; } ?>">
               <div class="col-sm-5 col-md-6<?php if($i%2==0){ echo ' col-sm-offset-2 col-md-offset-0 col-sm-push-5 col-md-push-6'; } ?>">
                 <img src="<?php the_sub_field('timeline_image'); ?>" class="img-responsive center-block" alt="" />
               </div>
-              <div class="col-sm-5 col-md-6<?php if($i%2==0){ echo ' col-sm-pull-7 col-md-pull-6'; }else{ echo ' col-sm-offset-2 col-md-offset-0;'; } ?>">
+              <div class="col-sm-5 col-md-6<?php if($i%2==0){ echo ' col-sm-pull-7 col-md-pull-6'; }else{ echo ' col-sm-offset-2 col-md-offset-0'; } ?>">
                 <div class="timeline-content">
                   <h2><?php the_sub_field('timeline_date'); ?></h2>
                   <?php the_sub_field('timeline_content'); ?>

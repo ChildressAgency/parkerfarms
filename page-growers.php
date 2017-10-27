@@ -25,12 +25,12 @@
           <div class="row">
             <div class="col-sm-4">
               <ul class="slider-nav" role="tablist">
-                <?php foreach($growers as $grower): 
+                <?php $f=0; foreach($growers as $grower): 
                   $grower_id = sanitize_title($grower['farm_name']); ?>
-                  <li role="presentation" class="active">
+                  <li role="presentation"<?php if($f==0){ echo ' class="active"'; } ?>>
                     <a href="#<?php echo $grower_id; ?>" aria-controls="<?php echo $grower_id; ?>" role="tab" data-toggle="tab"><?php echo $grower['farm_name']; ?> - <?php echo $grower['farm_location']; ?></a>
                   </li>
-                <?php endforeach; reset($growers); ?>
+                <?php $f++; endforeach; reset($growers); ?>
               </ul>
             </div>
             <div class="col-sm-8">

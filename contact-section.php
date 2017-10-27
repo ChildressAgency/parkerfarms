@@ -1,4 +1,4 @@
-  <section id="contact" class="green-lump">
+  <section id="contact" <?php if(!is_page('contact')){ echo ' class="green-lump"'; } ?><?php if(is_page('contact')){ echo ' style="background-color:#fff;"'; } ?>>
     <div class="container narrow">
       <div class="row">
         <div class="col-sm-5">

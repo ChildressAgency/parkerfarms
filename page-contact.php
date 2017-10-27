@@ -12,7 +12,7 @@
                 <p><?php the_sub_field('team_member_phone'); ?><br /><?php the_sub_field('team_member_email'); ?></p>
               </div>
             </div>
-            <?php if($i%2==0){ echo '</div><div class="row">'; } ?>
+            <?php if($i%2==0){ echo '</div><div class="row team-row">'; } ?>
           <?php $i++; endwhile; ?>
         </div>
       </div>

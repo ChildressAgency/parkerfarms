@@ -95,7 +95,7 @@
         <div class="container">
           <div class="caption">
             <h1><?php the_field('hero_title'); ?></h1>
-            <p><?php the_field('hero_text'); ?></p>
+            <?php the_field('hero_text'); ?>
           </div>
         </div>
       </div>
