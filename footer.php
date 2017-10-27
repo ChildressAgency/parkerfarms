@@ -47,5 +47,6 @@
     </div>
       <p class="childress">website created by <a href="https://childressagency.com" target="_blank">The Childress Agency</a></p>
   </footer>
+  <?php wp_footer(); ?>
 </body>
 </html>

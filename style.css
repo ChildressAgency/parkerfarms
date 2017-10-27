@@ -621,6 +621,15 @@ hr.timeline-bar{
   text-transform:uppercase;
 }
 
+.blog-summary{
+  margin-top:40px;
+}
+.blog-summary h3{
+  margin-top:0;
+  color:#119046;
+  font-weight:700;
+}
+
 
 @media (max-width:767px){
   footer>.container-fluid{
