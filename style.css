@@ -195,6 +195,10 @@ img.alignright{
   background-position:-239px 0px;
 }
 
+.container.narrow{
+  max-width:650px;
+}
+
 #hp-growLocations{
   padding-top:60px;
   padding-bottom:60px;
@@ -212,7 +216,11 @@ img.alignright{
   background-size:cover;
   min-height:820px;
 }
-#hp-sustainability:before{
+.green-divit{
+  position:relative;
+  padding-top:25px;
+}
+.green-divit:before{
   content:"";
   position:absolute;
   top:0;
@@ -281,7 +289,11 @@ img.alignright{
   text-align:center;
   position:relative;
 }
-#fleet:before{
+.white-lump{
+  position:relative;
+  padding-top:25px;
+}
+.white-lump:before{
   content:"";
   position:absolute;
   top:-35px;
@@ -304,7 +316,11 @@ img.alignright{
   position:relative;
   background-color:#f2f0eb;
 }
-#contact:before{
+.green-lump{
+  position:relative;
+  padding-top:25px;
+}
+.green-lump:before{
   content:"";
   position:absolute;
   height:35px;
@@ -435,6 +451,57 @@ hr.timeline-bar{
 .timeline-wrapper2 .fade.fadein{
   opacity:1;
 }
+
+#grow-locations{
+  background-color:#f2f0eb;
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
+#farmToTable{
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding-top:80px;
+  padding-bottom:100px;
+  color:#fff;
+}
+#farmToTable h1{
+  color:#aae1fa;
+}
+
+#farmsSlider{
+  padding-top:80px;
+  padding-bottom:100px;
+}
+.slider-nav{
+  list-style:none;
+  padding-left:0;
+  text-align:right;
+}
+.slider-nav>li{
+  margin-bottom:20px;
+}
+.slider-nav>li.active>a{
+  font-size:18px;
+}
+.slider-nav>li>a:focus{
+  text-decoration:none;
+}
+.farm-info{
+  max-width:620px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.farm-info>h1{
+  margin-bottom:0;
+}
+.farm-info h2{
+  margin-top:0;
+  font-family:"Droid Sans", sans-serif;
+  font-weight:700;
+  font-size:26px;
+}
+
 
 @media (max-width:767px){
   footer>.container-fluid{
