@@ -50,6 +50,28 @@ a:focus{
   margin-right:auto;
 }
 
+img.aligncenter,
+img.alignnone{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:25px auto;
+}
+img.alignleft{
+  display:block;
+  float:left;
+  max-width:100%;
+  height:auto;
+  margin:25px 25px 25px 0px;
+}
+img.alignright{
+  display:block;
+  float:right;
+  max-width:100%;
+  height:auto;
+  margin:25px 0px 25px 25px;
+}
+
 .masthead{
   padding-top:15px;
   padding-bottom:5px;
@@ -98,17 +120,25 @@ a:focus{
   background-size:cover;
   position:relative;
   min-height:315px;
+  display:table;
+  width:100%;
+  padding-top:155px;
 }
 .hero.hp-hero{
   min-height:680px;
 }
 .hero .caption-section{
-  position:absolute;
-  bottom:0;
+  display:table-cell;
+  vertical-align:bottom;
   width:100%;
   background-color:rgba(0,0,0,.6);
   padding-top:20px;
   padding-bottom:20px;
+}
+.hero.hp-hero .caption-section{
+  display:block;
+  position:absolute;
+  bottom:0;
 }
 .hero .caption{
   color:#fff;
@@ -118,6 +148,7 @@ a:focus{
 }
 .hero .caption>h1{
   margin-top:0;
+  margin-bottom:0;
   color:#aae1fa;
 }
 .hero.hp-hero .caption-section{
