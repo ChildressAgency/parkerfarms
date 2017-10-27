@@ -29,12 +29,12 @@
       ?>
       <div class="social">
         <?php if($facebook): ?>
-          <a href="<?php echo $facebook; ?>" class="fa-stack">
+          <a href="<?php echo $facebook; ?>" class="fa-stack" target="_blank">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-facebook-official fa-stack-1x"></i>
           </a>
         <?php endif; if($instagram): ?>
-          <a href="<?php echo $instagram; ?>" class="fa-stack">
+          <a href="<?php echo $instagram; ?>" class="fa-stack" target="_blank">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-instagram fa-stack-1x"></i>
           </a>
