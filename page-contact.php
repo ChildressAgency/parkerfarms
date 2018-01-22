@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-  <?php get_template_part('contact', 'section'); ?>
   <?php if(have_rows('team_contacts')): ?>
     <section id="teamContacts" class="green-lump">
       <div class="container narrow">
@@ -18,4 +17,5 @@
       </div>
     </section>
   <?php endif; ?>
+  <?php get_template_part('contact', 'section'); ?>
 <?php get_footer(); ?>
