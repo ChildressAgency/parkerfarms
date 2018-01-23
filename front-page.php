@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <section id="hp-growLocations">
     <div class="container">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/growing-locations.png" class="img-responsive center-block" alt="" />
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Parker-Maps-01-1-1024x950.png" class="img-responsive center-block" alt="" />
       <article class="text-center">
         <h1>Growing Locations</h1>
         <?php the_field('growing_locations_section_content'); ?>
