@@ -443,6 +443,10 @@ hr.timeline-bar{
   max-width:390px;
   margin-left:auto;
   margin-right:auto;
+  text-align:left;
+}
+.col-sm-pull-7 .timeline-content{
+  text-align:right;
 }
 .timeline-content h2{
   color:#119046;
