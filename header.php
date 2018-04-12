@@ -40,14 +40,14 @@
           </a>
         <?php endif; ?>
       </div>
-      <a href="<?php echo home_url(); ?>" class="header-logo">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-responsive center-block" alt="Parker Farms Logo" />
-      </a>
     </div>
   </div>
   <nav id="header-nav">
     <div class="container">
       <div class="navbar-header">
+        <a href="<?php echo home_url(); ?>" class="header-logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-responsive center-block" alt="Parker Farms Logo" />
+        </a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="expanded" aria-controls="navbar">
           <span class="sr-only">Toggle Navigation</span>
           <span class="icon-bar"></span>
@@ -56,7 +56,8 @@
         </button>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
+          <li<?php if(is_front_page()){ echo ' class="active"'; } ?>><a href="<?php echo home_url(); ?>">Home</a></li>
           <li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About</a></li>
           <li<?php if(is_page('growers')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('growers'); ?>">Growers</a></li>
           <li<?php if(is_page('products')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('products'); ?>">Products</a></li>
