@@ -1,7 +1,7 @@
 <?php 
-  if(!is_page('contact')){
-    get_template_part('contact', 'section');
-  }
+  //if(!is_page('contact')){
+  //  get_template_part('contact', 'section');
+  //}
 ?>
   <footer>
     <div class="container-fluid container-sm-height">
@@ -42,6 +42,9 @@
         </div>
         <div class="col-sm-3 col-sm-height left-border">
           <p>Copyright &copy;<?php echo date('Y'); ?> Parker Farms<br /><?php the_field('address', 'option'); ?><br /><?php the_field('city_state_zip', 'option'); ?></p>
+          <p><strong>OFFICE</strong> <?php the_field('phone', 'option'); ?></p>
+          <p><strong>FAX</strong> <?php the_field('fax', 'option'); ?></p>
+          <p><?php the_field('email', 'option'); ?></p>
         </div>
       </div>
     </div>
