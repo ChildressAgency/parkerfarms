@@ -96,7 +96,7 @@ img.alignright{
   padding-bottom:20px;
 }
 .header-logo>img{
-  min-width:165px;
+  /*min-width:165px;*/
   margin-top:-30px;
 }
 .navbar-nav{
